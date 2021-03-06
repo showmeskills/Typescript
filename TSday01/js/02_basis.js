@@ -39,14 +39,10 @@ e = false;
 JS中的函数时不考虑参数的类型和个数的
 TS中会考虑到函数的参数的类型和传参的数量
 */
-function sum(a:number,b:number):number{
+function sum(a, b) {
     return a + b;
 }
 //console.log(sum(123, 456));579
 //console.log(sum(123, '456'));//123456
-let res = sum(123,456);//579
+var res = sum(123, 456); //579
 console.log(res);
-
-
-
-
