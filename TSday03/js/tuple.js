@@ -3,5 +3,5 @@
 /*
 语法:[类型,类型,类型]
 */
-let tupleArr: [string,string,number,boolean];
-tupleArr = ['hello','terry',5555,true];
+var tupleArr;
+tupleArr = ['hello', 'terry', 5555, true];

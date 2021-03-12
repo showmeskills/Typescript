@@ -1,5 +1,5 @@
 //TS对象方法不太好用 原因1.{}2.function也可以是个对象
-let obj:object;
+var obj;
 obj = {};
 /*
 a和b 有很大区别
@@ -9,48 +9,31 @@ b = {name:'Terry'}
 */
 // {} 用来指定对象中可以包含哪个属性
 // 语法:{属性名:属性值,属性名:属性值}
-let obj1:{
-    name:string;
-    age:number;
-}
+var obj1;
 obj1 = {
-    name:'Terry',
-    age:18
+    name: 'Terry',
+    age: 18
 };
-
 //在属性名后加个? 表示可选的属性,这个值有也行,没也行
-let obj2 : {
-    name:string;
-    age?:number;
-}
-
+var obj2;
 obj2 = {
-    name:'Terrance'
-}
+    name: 'Terrance'
+};
 // 用一个方式表示任意属性 [propName:string]:any(任意字符串属性名)
 // 如果 [propName:string]:string 表示 属性值必须是字符串
 // 如果 [propName:string]:number 表示 属性值必须是数字
-let obj3 : {
-    name:string;
-    [propName:string]:string|number;
-}
-
+var obj3;
 obj3 = {
-    name:'猪八戒',
-    age:18,
-    Gender:'male'
-}
-
+    name: '猪八戒',
+    age: 18,
+    Gender: 'male'
+};
 //限制e的结构;表示 e它是一个函数;箭头后的number是一个函数类型声明(e的返回值是个number)
 /*
 设置函数结构的类型声明:
 语法:(形参:类型,形参:类型..)=>返回值:类型
 */
-let fn :(a:number,b:number)=>number
-
-fn = (n1:number,n2:number):number =>{
-    return n1 + n2
-}
-
-
-
+var fn;
+fn = function (n1, n2) {
+    return n1 + n2;
+};
